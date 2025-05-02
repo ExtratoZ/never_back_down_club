@@ -1,0 +1,33 @@
+@use "variables";
+
+.films {
+    background-image: linear-gradient(to bottom, variables.$color1 5%, variables.$color3);
+    padding: 20px;
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+        letter-spacing: 1.5;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        border-bottom: 1px solid variables.$color4;
+
+        &--reverse {
+            flex-direction: row-reverse;
+        }
+
+        &__image {
+            width: 100px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+    }
+}
