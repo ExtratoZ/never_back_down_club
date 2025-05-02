@@ -1,0 +1,50 @@
+@use "variables.scss";
+
+.header {
+    background-color: variables.$color1;
+    padding: 20px;
+    text-align: center;
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 50px;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        &__item {
+            font-size: 20px;
+            letter-spacing: 1.5;
+
+            a:hover {
+                color: variables.$color2;
+            }
+        }
+    }
+
+    &__button {
+        background-color: variables.$color1;
+        padding: 8px 12px;
+        border: 2px solid variables.$color4;
+        border-radius: 5px;
+        letter-spacing: 1.5;
+        font-size: 18px;
+        text-transform: uppercase;
+
+        a {
+            color: variables.$color4;
+        }
+
+        &:hover {
+            background-color: variables.$color2;
+        }
+    }
+
+}
